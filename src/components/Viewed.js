@@ -100,7 +100,7 @@ const Viewed = () => {
             </div>
 
             <div className='mt-[40px] flex justify-center mb-[80px]'>
-                <div className='py-[4px] px-[62px] bg-[#D1DEEB] rounded-[8px]'>
+                <div className='px-[28px] py-[3px] md:py-[4px]  md:px-[62px] bg-[#D1DEEB] rounded-[8px]'>
                     <p className='text-[#2B333B] text-[16px] font-medium'>Load More</p>
                 </div>
             </div>

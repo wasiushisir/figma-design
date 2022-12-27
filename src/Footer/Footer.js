@@ -5,10 +5,10 @@ import { FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <div className='w-screen h-[356px] bg-[#010203] mt-[20px]'>
+        <div className='w-screen md:h-[356px] bg-[#010203] mt-[20px]'>
             <div className='px-[29px] pt-[40px]'>
-                <div className='flex justify-between items-start '>
-                    <div className=' w-[400px] '>
+                <div className='space-y-4 md:flex justify-between items-start md:space-y-0'>
+                    <div className=' md:w-[400px] '>
                         <div className='flex justify-start items-center space-x-1'>
                             <div className='space-y-1'>
                                 <div className='h-[12px] w-[12px] bg-[#DAE3EA] rounded-[50%]'>
@@ -42,7 +42,7 @@ const Footer = () => {
                     </div>
                     <div className=' w-[240px]'>
 
-                        <h1 className='text-[#FFFFFF] text-[25px]'>About Us</h1>
+                        <h1 className='text-[#FFFFFF] text-[25px] mt-[40px] md:mt-[0px]'>About Us</h1>
 
                         <div className='mt-[40px] flex justify-between items-center'>
                             <div className='space-y-4 text-[13px] font-semibold text-[#FFFFFF]'>
@@ -69,7 +69,7 @@ const Footer = () => {
 
                     </div>
                     <div className=' w-[204px]'>
-                    <h1 className='text-[#FFFFFF] text-[25px]'>Follow Us</h1>
+                    <h1 className='text-[#FFFFFF] text-[25px] mt-[40px] md:mt-[0px]'>Follow Us</h1>
 
                     <div className='mt-[40px] flex justify-start items-center space-x-6'>
 

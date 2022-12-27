@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import { Bars3Icon,XMarkIcon } from '@heroicons/react/24/solid'
 import { VscHome } from 'react-icons/vsc';
 import { DocumentTextIcon,ChatBubbleOvalLeftEllipsisIcon,BellIcon,ShoppingCartIcon,Bars3BottomLeftIcon } from '@heroicons/react/24/outline'
 
 const Header = () => {
+    const [nav,setNav]=useState(false)
     return (
         <div className='w-screen h-[72px] z-10 bg-[#FFFFFF] fixed drop-shadow-[0_3px_5px_rgba(0,0,0,0.07)]'>
             <div className='px-[24px] flex justify-between items-center w-full h-full'>
@@ -11,11 +14,11 @@ const Header = () => {
                     <Bars3BottomLeftIcon className="h-6 w-6 "/>
 
                     </div>
-                    <h1 className='font-bold pl-[16px] text-[25px]'>DOKAN BHAI</h1>
+                    <h1 className='text-[18px] font-bold pl-[16px] md:text-[25px]'>DOKAN BHAI</h1>
 
                 </div>
 
-                <div className='flex space-x-10'>
+                <div className='hidden   md:flex space-x-10'>
                     <VscHome size={25}/>
                     <DocumentTextIcon className="h-6 w-6 "/>
                     <ChatBubbleOvalLeftEllipsisIcon className="h-6 w-6 "/>
@@ -31,7 +34,40 @@ const Header = () => {
 
                 </div>
 
+                <div onClick={()=>setNav(!nav)} className='md:hidden'>
+                    
+                    {
+                        !nav? <Bars3Icon className="h-6 w-6 text-black" />: <XMarkIcon className="h-6 w-6 text-black" />
+                        
+                    }
+
+
+                </div>
+
+
+
+
             </div>
+
+       
+
+       <div className={!nav?'hidden':'absolute w-full bg-[#FFFFFF]  px-4 md:hidden'}>
+
+       <VscHome className='border-b-2 border-zinc-300 w-full my-[8px]' size={25}/>
+                    <DocumentTextIcon className="h-6 w-full border-b-2 border-zinc-300 my-[8px] "/>
+                    <ChatBubbleOvalLeftEllipsisIcon className="h-6 w-full border-b-2 border-zinc-300 my-[8px]   "/>
+                    <BellIcon className="h-6 w-full  border-b-2 border-zinc-300  my-[8px]"/>
+                    <ShoppingCartIcon className="h-6 w-full border-b-2 border-zinc-300 my-[8px] "/>
+                    <div className='px-6 py-1 text-center  bg-[#DE3D3A] rounded-[8px] text-white my-[8px]'>
+                        profile
+                    </div>
+
+       </div>
+
+
+
+
+
             
         </div>
     );

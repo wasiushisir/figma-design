@@ -11,8 +11,8 @@ import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
     return (
-        <div className='px-[142px] mt-[160px]'>
-           <div className='flex  justify-start space-x-6'>
+        <div className='px-[100px] mt-[90px] md:px-[142px] md:mt-[160px]'>
+           <div className='  md:flex  justify-start space-x-6'>
             <Link to='/'>
             <div className='w-[172px] h-[268px] bg-[#FFFFFF] rounded-[24px] border border-solid border-[#9FB3C6]'>
                 <div className='px-[24px]'>
@@ -112,7 +112,7 @@ const Dashboard = () => {
            </div>
 
 
-           <div className='flex justify-start items-start my-[80px] space-x-6'>
+           <div className='space-y-3 md:flex justify-start items-start my-[80px] md:space-x-6'>
 
             <img src={profileImg} alt="" style={{height:'120px',width:'120px'}} className='rounded-[8px]' />
             <div>

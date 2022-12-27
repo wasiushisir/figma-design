@@ -8,9 +8,9 @@ import { Link } from 'react-router-dom';
 
 const Wallet = () => {
     return (
-        <div className='px-[142px] mt-[160px]'>
+        <div className='px-[100px] mt-[90px] md:px-[142px] md:mt-[160px]'>
 
-            <div className='flex  justify-start space-x-6'>
+            <div className='md:flex  justify-start md:space-x-6  md:space-y-0'>
 
                 <Link to='/'>
                     <div className='w-[172px] h-[268px] bg-[#F0F5FA] rounded-[24px] border border-solid border-[#9FB3C6]'>
@@ -35,7 +35,7 @@ const Wallet = () => {
 
                 <Link to='/orders'>
 
-                    <div className='w-[172px] h-[268px] bg-[#F0F5FA] rounded-[24px] border border-solid border-[#9FB3C6]'>
+                    <div className='w-[172px] h-[268px] bg-[#F0F5FA] rounded-[24px] border border-solid border-[#9FB3C6] mt-[35px]  md:mt-[0px]'>
 
                         <div className='px-[24px]'>
                             <div className='mt-[35px]'>
@@ -65,7 +65,7 @@ const Wallet = () => {
 
 
 
-                <div className='w-[172px] h-[268px] bg-[#FFFFFF] rounded-[24px] border border-solid border-[#9FB3C6]' >
+                <div className='w-[172px] h-[268px] bg-[#FFFFFF] rounded-[24px] border border-solid border-[#9FB3C6] mt-[35px]  md:mt-[0px]' >
 
                     <div className='px-[24px]'>
                         <div className='mt-[35px]'>
@@ -88,7 +88,7 @@ const Wallet = () => {
 
 
                  <Link to='/account'>
-                <div className='w-[172px] h-[268px] bg-[#F0F5FA] rounded-[24px] border border-solid border-[#9FB3C6]'>
+                <div className='w-[172px] h-[268px] bg-[#F0F5FA] rounded-[24px] border border-solid border-[#9FB3C6] mt-[35px]  md:mt-[0px]'>
 
                     <div className='px-[24px]'>
                         <div className='mt-[35px]'>
@@ -116,27 +116,27 @@ const Wallet = () => {
             </div>
 
 
-            <div className='my-[80px] '>
+            <div className=' px-[0px] my-[80px] '>
 
-                <h1 className='text-[31px] text-[#2B333B]'>Wallet</h1>
+                <h1 className='text-[20px] md:text-[31px] text-[#2B333B]'>Wallet</h1>
 
-                <div className='mt-[24px] flex justify-between items-center space-x-6'>
-                    <div className='w-[271px] h-[224px] rounded-[24px] bg-[#FFFFFF]'>
+                <div className='mt-[24px] md:flex justify-between items-center md:space-x-6'>
+                    <div className='w-[200px] md:w-[271px] h-[224px] rounded-[24px] bg-[#FFFFFF] pt-[25px] md:pt-[0px]'>
 
-                        <div className='mt-[29px] ml-[29px] h-[31px] w-[31px] border border-solid border-[#4C5967] rounded-[8px] flex justify-center items-center'>
+                        <div className=' md:mt-[29px] ml-[29px] h-[31px] w-[31px] border border-solid border-[#4C5967] rounded-[8px] flex justify-center items-center'>
                             <CheckIcon className="h-4 w-4 " />
 
                         </div>
 
                         <div className='mx-[24px] mt-[56px] '>
                             <p className='text-[16px] text-[#4C5967]'>Total Bought</p>
-                            <h1 className='text-[48px] text-[#2B333B]  font-semibold'>$1050</h1>
+                            <h1 className='text-[28px] md:text-[48px] text-[#2B333B]  font-semibold'>$1050</h1>
 
                         </div>
 
 
                     </div>
-                    <div className=' w-[271px] h-[224px] rounded-[24px] bg-[#FFFFFF]'>
+                    <div className='w-[200px] md:w-[271px] h-[224px] rounded-[24px] bg-[#FFFFFF] pt-[25px] md:pt-[0px] mt-[35px]  md:mt-[0px]'>
 
                         <div className='mt-[29px] ml-[29px]'>
                             <CiWallet size={40} style={{ color: '#4C5967', fill: '#4C5967' }} />
@@ -144,14 +144,14 @@ const Wallet = () => {
 
                         <div className='mx-[24px] mt-[56px] '>
                             <p className='text-[16px] text-[#4C5967]'>Balance</p>
-                            <h1 className='text-[48px] text-[#2B333B]  font-semibold'>$500</h1>
+                            <h1 className='text-[28px] md:text-[48px] text-[#2B333B]  font-semibold'>$500</h1>
 
                         </div>
 
 
 
                     </div>
-                    <div className='w-[271px] h-[224px] rounded-[24px] bg-[#FFFFFF]'>
+                    <div className='w-[200px] md:w-[271px] h-[224px] rounded-[24px] bg-[#FFFFFF] pt-[25px] md:pt-[0px] mt-[35px]  md:mt-[0px]'>
                         <div className='mt-[29px] ml-[29px] h-[31px] w-[31px] border border-solid border-[#4C5967] rounded-[8px] flex justify-center items-center'>
 
                             <ArrowUpIcon className="h-4 w-4 " />
@@ -161,14 +161,14 @@ const Wallet = () => {
 
                         <div className='mx-[24px] mt-[56px] '>
                             <p className='text-[16px] text-[#4C5967]'>Bonus</p>
-                            <h1 className='text-[48px] text-[#2B333B]  font-semibold'>$150</h1>
+                            <h1 className='text-[28px] md:text-[48px] text-[#2B333B]  font-semibold'>$150</h1>
 
                         </div>
 
 
                     </div>
 
-                    <div className='w-[271px] h-[224px] rounded-[24px] bg-[#FFFFFF]' >
+                    <div className='w-[200px] md:w-[271px] h-[224px] rounded-[24px] bg-[#FFFFFF] pt-[25px] md:pt-[0px] mt-[35px]  md:mt-[0px]' >
 
                         <div className='mt-[29px] ml-[29px] h-[31px] w-[31px] border border-solid border-[#4C5967] rounded-[8px] flex justify-center items-center'>
                             <ArrowDownIcon className="h-4 w-4 " />
@@ -178,7 +178,7 @@ const Wallet = () => {
 
                         <div className='mx-[24px] mt-[56px] '>
                             <p className='text-[16px] text-[#4C5967]'>Pending</p>
-                            <h1 className='text-[48px] text-[#2B333B]  font-semibold'>$120</h1>
+                            <h1 className='text-[28px] md:text-[48px] text-[#2B333B]  font-semibold'>$120</h1>
 
                         </div>
 
